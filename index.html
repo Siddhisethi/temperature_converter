@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter</title>
+</head>
+<body class=" bg-gradient-to-bl from-blue-200 to-cyan-200">
+    <div class="text-center text-4xl bg-gradient-to-br from-blue-500 to-blue-300 text-black p-6 font-sans font-semibold">Temperature Converter</div>
+   <div class="flex items-center justify-center mt-10">
+    <div class="h-[30rem] w-[30rem] box-border border-4 border-black ">
+        <div class="h-24 bg-cyan-700 mt-0">
+       <div class="h-10  w-80 pt-6  mx-auto  text-black  ">
+          <input id="temperatureInput" class="text-xl w-80 text-center font-bold h-10  " type="number" placeholder="Enter the Value To Convert">
+       </div></div>
+       <div class="bg-gradient-to-tr from-cyan-600 to-cyan-300 h-[16rem]">
+       <div class="h-[10rem] flex space-x-52  items-center ">
+       <div>
+        <p class="ml-10 mt-4 text-xl font-bold text-black">From</p>
+        <select id="fromUnit" class="h-10 w-28 bg-white mt-4 ml-5 text-center rounded-xl">
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select>
+    </div>
+    <div>
+        <p class=" mt-4 text-xl font-bold text-black ml-12">To</p>
+        <select id="toUnit" class="h-10 w-28 bg-white mt-4 mr-5 text-center rounded-xl">
+            <option value="Celsius">Celsius</option>
+            <option value="Fahrenheit" >Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+        </select>
+    </div>
+    </div>
+     
+        <div class="flex justify-center items-center  ">
+            <button id="convertBtn" class=" h-10 w-32 rounded-md  bg-purple-800 hover:bg-blue-400 cursor-pointer mt-10"><p class=" text-white hover:text-black text-xl ">Convert</p></button>
+         </div>
+    </div>
+       <div id="result" class="text-center mt-6 text-xl font-bold text-black"></div>
+      
+       
+    </div>
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
